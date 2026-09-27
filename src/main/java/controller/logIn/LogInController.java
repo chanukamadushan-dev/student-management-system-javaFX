@@ -1,4 +1,4 @@
-package controller;
+package controller.logIn;
 
 public class LogInController {
     public boolean checkUserNameAndPassword(String name, String password) {

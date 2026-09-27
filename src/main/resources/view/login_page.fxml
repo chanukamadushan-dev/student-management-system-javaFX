@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1321;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login_Page_controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1321;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logIn.Login_Page_controller">
    <children>
       <Label layoutX="36.0" layoutY="43.0" prefHeight="42.0" prefWidth="171.0" text="Log in" textFill="#399fd9">
          <font>
