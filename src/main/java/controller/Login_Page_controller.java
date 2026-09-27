@@ -13,6 +13,7 @@ import java.io.IOException;
 
 public class Login_Page_controller {
 
+    LogInController logInController = new LogInController();
     @FXML
     private Button btnLogIn;
 
@@ -24,12 +25,9 @@ public class Login_Page_controller {
 
     @FXML
     void btnLogInOnAction(ActionEvent event) throws IOException {
-        String name = txtUserName.getText();
-        String password = txtPassword.getText();
 
-        boolean b = checkUserNameAndPassword(name, password);
 
-        if (b){
+        if (logInController.checkUserNameAndPassword(txtUserName.getText(), txtPassword.getText())){
             Stage stage = new Stage();
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/home_page.fxml"))));
             stage.show();
@@ -38,14 +36,6 @@ public class Login_Page_controller {
             System.out.println("Wrong password");
         }
     }
-
-    private boolean checkUserNameAndPassword(String name, String password) {
-        if(name.equals("pamod") && password.equals("2004")){
-            return true;
-        }
-        return false;
-    }
-
     public void txtUserNameOnAction(ActionEvent actionEvent) {
         txtPassword.requestFocus();
     }
