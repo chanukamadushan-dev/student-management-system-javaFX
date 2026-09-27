@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.Login_Page_controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0d1321;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login_Page_controller">
+   <children>
+      <Label layoutX="36.0" layoutY="43.0" prefHeight="42.0" prefWidth="171.0" text="Log in" textFill="#399fd9">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="122.0" layoutY="153.0" onAction="#txtUserNameOnAction" prefHeight="29.0" prefWidth="306.0" promptText="email/username" />
+      <Button fx:id="btnLogIn" layoutX="468.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnLogInOnAction" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #219ebc;" text="Log in" textFill="#f4ebeb">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="122.0" layoutY="118.0" prefHeight="0.0" prefWidth="226.0" text="User Name" textFill="#f7f7f7">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="200.0" prefHeight="0.0" prefWidth="226.0" text="Password" textFill="#f7f7f7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="122.0" layoutY="233.0" onAction="#txtPasswordOnAction" prefHeight="22.0" prefWidth="306.0" promptText="password" />
+   </children>
 </AnchorPane>
